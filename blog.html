@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navtop">
+                <div class="navone container flex">
+                    <ul class="flex">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">Giới thiệu</a></li>
+                        <li><a href="/">Tra cứu</a></li>
+                        <li><a href="/">Dịch vụ</a></li>
+                        <li><a href="/">Blog</a></li>
+                        <li><a href="/">Đăng nhập</a></li>
+                    </ul>
+                    <div class="sociallink flex">
+                        <a href="/" title="facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="/" title="twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="/" title="youtube"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="/" title="pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="navmain">
+                <div class="navtwo container flex">
+                    <div class="logo flex navlist">
+                        <a href="/" class="flex">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <h1>BLOG</h1>
+                        </a>
+                        <ul class="flex">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/">Giới thiệu<i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="/">Tra cứu<i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="/">Dịch vụ<i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="/">Blog<i class="fa-solid fa-angle-down"></i></a></li>
+                            <li><a href="/">Đăng nhập</a></li>
+                        </ul>
+                    </div>
+                    <div class="navsearch flex">
+                        <div class="darkmode">
+                            <div class="checkboxdarkmode">
+                                <input type="checkbox" name="checkbox" id="toggledark">
+                            </div>
+                        </div>
+                        <div class="searchbar">
+                            <i class="fa-solid fa-xmark" id="removesearch"></i>
+                            <div style="flex-grow: 1;"></div> <!-- Yếu tố trung gian để đẩy các icon ra hai bên -->
+
+                            <i class="fa-solid fa-magnifying-glass" id="searchicon"></i>
+                        </div>
+                        <input type="search" placeholder="Search Here..." id="searchinput">
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+
+
+    <main class="container">
+        <section class="trendingsec flex">
+            <div class="flex">
+                <div class="trending-title">
+                    <h3>Trending<i class="fa-solid fa-angle-right"></i></h3>
+                </div>
+                <div class="text_change">
+                    <a href="/">Những điều cần biết về trắc nghiệm tính cách MBTI</a>
+                </div>
+            </div>
+            <div class="leftrightchange">
+                <button><i class="fa-solid fa-angle-left"></i></button>
+                <button><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </section>
+        
+        <section class="headerpostsec">
+            <div class="hposts">
+                <a href="https://tracuuthansohoc.com/bai-trac-nghiem-tinh-cach-mbti/" class="bigpost toppost" id="firstpost">
+                    <img src="../Blog/image/laptop post.jpg" alt="">
+                    <div class="postinfo">
+                        <span class="label">MBTI</span>
+                        <h2>Những điều cần biết về trắc nghiệm tính cách MBTI</h2>
+                        <p>by <span>Coder</span> Jun 02.2024</p>
+                    </div>
+                </a>
+                <div class="gridpost">
+                    <a href="https://tracuuthansohoc.com/istp/" class="gpost toppost">
+                        <img src="../Blog/image/anh1.jpg" alt="">
+                        <div class="postinfo">
+                            <span class="label">ISTP</span>
+                            <h2>Nhóm tính cách ISTP có đặc điểm gì?</h2>
+                            <p>Jun 09.2024</p>
+                        </div>
+                    </a>
+                    <a href="https://tracuuthansohoc.com/mbti-isfj/" class="gpost toppost">
+                        <img src="../Blog/image/anh21.jpg" alt="">
+                        <div class="postinfo">
+                            <span class="label">ISFJ</span>
+                            <h2>Công việc nào phù hợp với nhóm tính cách ISFJ?</h2>
+                            <p>Jun 19.2024</p>
+                        </div>
+                    </a>
+                    <a href="https://tracuuthansohoc.com/estj/" class="gpost toppost">
+                        <img src="../Blog/image/anh22.jpg" alt="">
+                        <div class="postinfo">
+                            <span class="label">ESFJ</span>
+                            <h2>Xu hướng công việc và mối quan hệ của ESFJ?</h2>
+                            <p>Jun 23.2024</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="allmainpostsec flex">
+            <div class="leftsidesec">
+                <div class="healthnews">
+                    <div class="wtitle flex">
+                        <h3>Bài viết nổi bật</h3>
+                        <a href="/">View all</a>
+                    </div>
+                    <div class="content-wrapper flex">
+                        <div class="wposts-container flex">
+                            <a href="https://tracuuthansohoc.com/isfp/" class="gpost wpost healthpost">
+                                <img src="../Blog/image/anh3.png" alt="">
+                                <span class="label">ISFP</span>
+                                <h2>Nhóm tính cách ISFP có đặc điểm gì?</h2>
+                                <p>Jun 03.2024</p>
+                            </a>
+                        </div>
+        
+                        <div class="wfourposts flex">
+                            <a href="https://tracuuthansohoc.com/esfp/" class="gpost npost flex healthpost">
+                                <img src="../Blog/image/anh4.jpg" alt="">
+                                <div class="postinfo npostinfo">
+                                    <span class="label">ESFP</span>
+                                    <h2>Xu hướng phát triển công việc và các mối quan hệ của ESFP.</h2>
+                                    <p>Jun 06.2024</p>
+                                </div>
+                            </a>
+                            <a href="https://tracuuthansohoc.com/esfp/" class="gpost npost flex healthpost">
+                                <img src="../Blog/image/anh41.jpg" alt="">
+                                <div class="postinfo npostinfo">
+                                    <span class="label">ESTJ</span>
+                                    <h2>Nhóm người nhiệt huyết, tỉ mỉ, lý trí và nguyên tắc.</h2>
+                                    <p>Jun 08.2024</p>
+                                </div>
+                            </a>
+                            <a href="https://tracuuthansohoc.com/tinh-cach-intj-trong-mbti/" class="gpost npost flex healthpost">
+                                <img src="../Blog/image/anh42.jpg" alt="">
+                                <div class="postinfo npostinfo">
+                                    <span class="label">INTJ</span>
+                                    <h2>Định hướng nghề nghiệp cho nhóm tính cách INTJ.</h2>
+                                    <p>Jun 09.2024</p>
+                                </div>
+                            </a>
+                            <a href="https://tracuuthansohoc.com/tinh-cach-istj-trong-mbti/" class="gpost npost flex healthpost">
+                                <img src="../Blog/image/anh43.jpg" alt="">
+                                <div class="postinfo npostinfo">
+                                    <span class="label">ISTJ</span>
+                                    <h2>Những điều cần biết về nhóm tính cách ISTJ</h2>
+                                    <p>Jun 11.2024</p>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+               
+                    <div class="reviewsec">
+                        <div class="wtitle flex">
+                            <h3>Bài viết mới nhất</h3>
+                            <a href="/"></a>
+                        </div>
+                        <div class="reviewposts">
+                            <a href="https://tracuuthansohoc.com/trac-nghiem-huong-nghiep-mbti/" class="gpost revpost">
+                                <div class="revpostimg">
+                                    <img src="../Blog/image/anh51.jpg"alt="">
+                                    <span class="label">MBTI</span>
+                                </div>
+                                <div class="postinfo revpostinfo">
+                                    <h2>Khám phá nghề nghiệp của bản thân</h2>
+                                    <p>Jun 23.2024</p>
+                                </div>
+                            </a>
+
+                            <a href="https://tracuuthansohoc.com/test-huong-noi-huong-ngoai-mbti/" class="gpost revpost">
+                                <div class="revpostimg">
+                                    <img src="../Blog/image/anh52.jpg"alt="">
+                                    <span class="label">MBTI</span>
+                                </div>
+                                <div class="postinfo revpostinfo">
+                                    <h2>Test hướng nội, hướng ngoại MBTI</h2>
+                                    <p>Jun 22.2024</p>
+                                </div>
+                            </a>
+
+                            <a href="https://tracuuthansohoc.com/mbti-hiem/" class="gpost revpost">
+                                <div class="revpostimg">
+                                    <img src="../Blog/image/anh53.jpg"alt="">
+                                    <span class="label">MBTI</span>
+                                </div>
+                                <div class="postinfo revpostinfo">
+                                    <h2>Đặc điểm nhóm tính cách hiếm là gì?</h2>
+                                    <p>Jun 21.2024</p>
+                                </div>
+                            </a>
+
+                            <a href="https://tracuuthansohoc.com/16-tinh-cach-mbti/" class="gpost revpost">
+                                <div class="revpostimg">
+                                    <img src="../Blog/image/anh54.jpg"alt="">
+                                    <span class="label">MBTI</span>
+                                </div>
+                                <div class="postinfo revpostinfo">
+                                    <h2>Đặc điểm và các lĩnh vực phát triển phù hợp</h2>
+                                    <p>Jun 20.2024</p>
+                                </div>
+                            </a>
+
+                            <a href="https://tracuuthansohoc.com/bai-trac-nghiem-tinh-cach-mbti/" class="gpost revpost">
+                                <div class="revpostimg">
+                                    <img src="../Blog/image/anh55.jpg"alt="">
+                                    <span class="label">MBTI</span>
+                                </div>
+                                <div class="postinfo revpostinfo">
+                                    <h2>Công cụ hữu hiệu giúp định vị bản thân</h2>
+                                    <p>Jun 19.2024</p>
+                                </div>
+                            </a>
+
+                            <a href="https://tracuuthansohoc.com/isfp/" class="gpost revpost">
+                                <div class="revpostimg">
+                                    <img src="../Blog/image/anh56.jpg"alt="">
+                                    <span class="label">MBTI</span>
+                                </div>
+                                <div class="postinfo revpostinfo">
+                                    <h2>Định hướng nghề nghiệp và các mối quan hệ</h2>
+                                    <p>Jun 18.2024</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gadlap flex">
+                    <div class="gadgets">
+                        <div class="wtitle flex">
+                            <h3>Nhóm tính cách hướng nội</h3>
+                            <a href="/"></a>
+                        </div>
+                        <div class="gadposts">
+                            <a href="https://tracuuthansohoc.com/intp/" class="gpost bpopopost gadpost">
+                                <img src="../Blog/image/anh68.jpg" alt="">
+                                <div class="postinfo">
+                                    <span class="label">Nhóm I</span>
+                                    <h2>Nhóm INTP trong MBTI có đặc điểm gì</h2>
+                                    <p>March 20.2024</p>
+                                </div>
+                            </a>
+
+                            <a href="https://tracuuthansohoc.com/intp/" class="gpost npost flex ppost bpopopost gadpost">
+                                <img src="../Blog/image/anh61.png" alt="">
+                                <div class="postinfo npostinfo ppostinfo">
+                                    <span class="label">Nhóm I</span>
+                                    <h2>Nhóm INTP trong MBTI có đặc điểm gì</h2>
+                                    <p>March 20.2024</p>
+                                </div>
+                            </a>
+
+                            <a href="https://tracuuthansohoc.com/mbti-isfj/" class="gpost npost flex ppost bpopopost gadpost">
+                                <img src="../Blog/image/anh62.png" alt="">
+                                <div class="postinfo npostinfo ppostinfo">
+                                    <span class="label">Nhóm I</span>
+                                    <h2>Nhóm ISFJ trong MBTI có đặc điểm gì</h2>
+                                    <p>March 15.2024</p>
+                                </div>
+                            </a>
+
+                            <a href="https://tracuuthansohoc.com/tinh-cach-istj-trong-mbti/" class="gpost npost flex ppost bpopopost gadpost">
+                                <img src="../Blog/image/anh63.jpg" alt="">
+                                <div class="postinfo npostinfo ppostinfo">
+                                    <span class="label">Nhóm I</span>
+                                    <h2>Nhóm ISTJ trong MBTI có đặc điểm gì</h2>
+                                    <p>March 20.2024</p>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="laptops">
+                            <div class="wtitle flex">
+                                <h3>Nhóm tính cách hướng ngoại</h3>
+                                <a href="/"></a>
+                            </div>
+                            <div class="lapposts">
+                                <a href="https://tracuuthansohoc.com/esfp/" class="gpost bpopupost lappost">
+                                    <img src="../Blog/image/anh67.jpg" alt="">
+                                    <div class="postinfo">
+                                        <span class="label">Nhóm E</span>
+                                        <h2>Nhóm ESFP trong MBTI có đặc điểm gì</h2>
+                                        <p>March 20.2024</p>
+                                    </div>
+                                </a>
+
+                                <a href="https://tracuuthansohoc.com/esfp/" class="gpost npost flex ppost lappost">
+                                    <img src="../Blog/image/anh64.png" alt="">
+                                    <div class="postinfo npostinfo ppostinfo">
+                                        <span class="label">Nhóm E</span>
+                                        <h2>Nhóm ESFP trong MBTI có đặc điểm gì</h2>
+                                        <p>March 20.2024</p>
+                                    </div>
+                                </a>
+
+                                <a href="https://tracuuthansohoc.com/estj/" class="gpost npost flex ppost lappost">
+                                    <img src="../Blog/image/anh65.png" alt="">
+                                    <div class="postinfo npostinfo ppostinfo">
+                                        <span class="label">Nhóm E</span>
+                                        <h2>Nhóm ESTJ trong MBTI có đặc điểm gì</h2>
+                                        <p>March 19.2024</p>
+                                    </div>
+                                </a>
+
+                                <a href="https://tracuuthansohoc.com/entj/" class="gpost npost flex ppost lappost">
+                                    <img src="../Blog/image/anh66.png" alt="">
+                                    <div class="postinfo npostinfo ppostinfo">
+                                        <span class="label">Nhóm E</span>
+                                        <h2>Nhóm ENTJ trong MBTI có đặc điểm gì</h2>
+                                        <p>March 14.2024</p>
+                                    </div>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+                <div class="latestpostsec">
+                    <div class="wtitle flex">
+                        <h3>Ứng dụng MBTI</h3>
+                        <a href="/"></a>
+                    </div>
+                    <div class="latestpostsec flex">
+                        <div class="latestdata">
+                            <a href="https://tracuuthansohoc.com/trac-nghiem-huong-nghiep-mbti/" class="gpost flex latepost">
+                                <div class="latepostimg">
+                                    <img src="../Blog/image/anh7.jpg" alt="">
+                                    <span class="label">ứng dụng</span>
+                                </div>
+                                <div class="postinfo npostinfo">
+                                    <h2>Khám phá nghề nghiệp bản thân</h2>
+                                    <h5>Thông qua bài test, mỗi các nhân sẽ biết được bản thân có cơ hội phát triển ở môi trường nào.....</h5>
+                                    <p>Jun 02.2024</p>
+                                </div>
+                            </a>
+                
+                            <a href="https://careerviet.vn/vi/talentcommunity/mbti-la-gi-tong-hop-cac-tinh-cach-mbti-co-the-ban-chua-biet.35A5239F.html" class="gpost flex latepost">
+                                <div class="latepostimg">
+                                    <img src="../Blog/image/anh71.jpg" alt="">
+                                    <span class="label">Ứng dụng</span>
+                                </div>
+                                <div class="postinfo npostinfo">
+                                    <h2>MBTI và những điều cần biết</h2>
+                                    <h5>Từ bốn tiêu chí này, MBTI tạo ra 16 nhóm tính cách, mỗi nhóm được biểu diễn bằng một mã gồm bốn chữ cái. Ví dụ: ISTJ, ENFP, INTP... Vậy MBTI bạn thuộc nhóm nào? .....</h5>
+                                    <p>Jun 05.2024</p>
+                                </div>
+                            </a>
+                
+                            <a href="https://123job.vn/bai-viet/ung-dung-cua-trac-nghiem-mbti-trong-cac-linh-vuc-doi-song-1259.html" class="gpost flex latepost">
+                                <div class="latepostimg">
+                                    <img src="../Blog/image/anh73.jpg" alt="">
+                                    <span class="label">Ứng dụng</span>
+                                </div>
+                                <div class="postinfo npostinfo">
+                                    <h2>MBTI trong các lĩnh vực đời sống</h2>
+                                    <h5>Ứng dụng của trắc nghiệm MBTI trải rộng trên mọi lĩnh vực của đời sống từ các vấn đề riêng tư đến công việc, áp dụng trên mọi khía cạnh của mỗi con người bởi.....</h5>
+                                    <p>Jun 08.2024</p>
+                                </div>
+                            </a>
+                        </div>
+                
+                        <button class="loadmorelatest">Load More<i class="fa-solid fa-angle-down"></i></button>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="rightsidesec"></div>
+        </section>
+        
+        
+        
+        
+
+        
+    </main>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+    <script src="backtotop.js"></script>
+    <script src="darkmode.js"></script>
+
+</body>
+</html>
