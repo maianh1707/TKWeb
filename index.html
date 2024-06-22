@@ -1,868 +1,159 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Font Awesome CDN Link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- Custom CSS File Link -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-
-
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
+    <title>Love Compatibility</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Adding Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
-<!-- Header section starts -->
-<header>
-    <input type="checkbox" id="toggler">
-    <label for="toggler" class="fas fa-bars"></label>
-    <a href="#" class="logo">MBTI<span>.</span></a>
-    <nav class="navbar">
-        <a href="#about">Giới thiệu</a>
-        <a href="#products">Nhóm tính cách</a>
-        <a href="#review">Lý do</a>
-        <a href="#test">Test ngay</a>
-        <a href="#faq">Hỏi đáp</a>
-    </nav>
-
-    <div class="icons">
-        <a href="#" class="fas fa-heart"></a>
-        <!--<a href="#" class="fas fa-shopping-cart"></a>-->
-        <a href="#" class="fas fa-user"></a>
-    </div>
-</header>
-<!-- Home section starts -->
-<section class="home" id="home">
-    <div class="content">
-        <h3>Trắc nghiệm MBTI</h3>
-        <span>Khám phá tiềm năng bản thân</span>
-        <p>Myers-Briggs Type Indicator là một công cụ đánh giá tâm lý phổ biến giúp xác định loại hình tính cách của một người dựa trên bốn yếu tố chính, thường được sử dụng trong việc tư vấn nghề nghiệp, phát triển cá nhân và mối quan hệ.</p>
-        <a href="#test" class="btn">Test now</a>
-    </div>
-</section>
-<!-- About section starts -->
-<section class="about" id="about">
-    <h1 class="heading"><span>Giới </span>thiệu</h1>
-    <div class="row">
-        <div class="video-container">
-            <video src="../LAM/image/about-video.mp4" loop autoplay muted></video>
-            <h3>Thấu hiểu</h3>
-        </div>
-        <div class="content">
-            <h3>Trắc nghiệm MBTI là gì?</h3>
-            <p>Trắc nghiệm tính cách MBTI (Myers-Briggs Type Indicator) là một phương pháp sử dụng hàng loạt các câu hỏi trắc nghiệm để phân tích tính cách con người. Kết quả trắc nghiệm MBTI chỉ ra cách con người nhận thức thế giới xung quanh và ra quyết định cho mọi vấn đề trong cuộc sống.</p>
-            <p>Hiện nay, MBTI được coi là công cụ khám phá tính cách phổ biến và chính xác nhất trên thế giới. Trong công việc, MBTI giúp mỗi cá nhân có thêm thông tin để định hướng và lựa chọn nghề nghiệp. Nhà tuyển dụng cũng có thể sử dụng MBTI để đánh giá mức độ phù hợp của ứng viên với vị trí công việc và văn hoá doanh nghiệp.</p>
-            <a href="#about" class="btn">learn more</a>
-        </div>
-    </div>
-</section>
-<!-- Icons section starts -->
-<section class="icon-container">
-
-    <div class="icons">
-        <img src="image/icon-1.png" alt="">
-        <div class="info">
-            <h3>Know Yourself</h3>
-            <span>Hiểu chính mình</span>
-        </div>
-    </div>
-
-    <div class="icons">
-        <img src="image/icon-2.png" alt="">
-        <div class="info">
-            <h3>Unlock Strengths</h3>
-            <span>Mở khóa điểm mạnh</span>
-        </div>
-    </div>
-
-    <div class="icons">
-        <img src="image/icon-3.png" alt="">
-        <div class="info">
-            <h3>Career Guidance</h3>
-            <span>Hướng dẫn nghề nghiệp</span>
-        </div>
-    </div>
-
-    <div class="icons">
-        <img src="image/icon-4.png" alt="">
-        <div class="info">
-            <h3>Personal Growth</h3>
-            <span>Phát triển bản nhân</span>
-        </div>
-    </div>
-</section>
-<!-- Nhóm tính cách -->
-<section class="products" id="products">
-    <h1 class="heading">16 <span>Nhóm tính cách</span></h1>
-    <div class="box-container">
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/istj.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\Image\z5562534157967_b27bf6b63d99dcdcf206a955f1f5633c.jpg" alt="Logo">
             </div>
+            <nav>
+                <ul>
+                    <li><a href="#" title="Trang chủ">Trang chủ</a></li>
+                    <li><a href="#" title="Giới thiệu">Giới thiệu</a></li>
+                    <li><a href="#" title="Tra cứu">Tra cứu</a></li>
+                    <li><a href="#" title="Dịch vụ">Dịch vụ</a></li>
+                    <li><a href="#" title="Blog">Blog</a></li>
+                    <li><a href="#" title="Đăng nhập">Đăng nhập</a></li>
+                    <li><a href="#" title="Tìm kiếm">Tìm kiếm</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <!-- Thêm ảnh động vào phần hero 
+            <img src="https://media4.giphy.com/media/241LJn6LFZhlkhrumM/200.webp?cid=ecf05e47u73to5rlrthsbxvg1b7zobpf5i6qm23qxgrm9coc&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Love Animation" >-->
+            
+            <!-- Khung bao quanh tiêu đề, phụ đề, mô tả và nút -->
+            <div class="hero-box">
+                <h1>GIẢI MÃ TÌNH CẢM CỦA BẠN</h1>
+                <p class="subtitle">ĐƠN GIẢN ✦ DỄ DÀNG ✦ MIỄN PHÍ</p>
+                <p class="description">Công cụ bói tình yêu theo tên và ngày sinh chính xác 100%</p>
+                <button id="lovePredictButton">XEM BÓI TÌNH YÊU NGAY</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Content Section based on the provided image -->
+    <section class="content-section">
+        <div class="container">
             <div class="content">
-                <h3>ISTJ - Người trách nhiệm</h3>
-                <div class="img-1">Người biết sắp xếp trật tự, có trách nhiệm</div>
+                <h2>BẮT ĐẦU HÀNH TRÌNH KHÁM PHÁ MỘT NỬA CÒN LẠI CỦA BẠN VỚI APP BÓI TÌNH YÊU</h2>
+                <p>Mục tiêu số 1 của bói tình yêu là trở thành người đồng hành cùng bạn trong hành trình chinh phục và thấu hiểu một nửa còn lại. Bạn sẽ tìm thấy rõ được tính cách của người ấy và giải pháp giúp hai người hòa hợp với nhau. Đội ngũ tuyệt vời của chúng tôi có chuyên gia trong lĩnh vực tư vấn tâm lý giúp phân tích chính xác mong muốn của từng cá nhân. <strong>Công cụ bói tình yêu theo tên</strong> được tạo ra để giúp bạn hiểu được tính cách của từng người, từ đó hai bạn sẽ tìm ra những gợi ý tuyệt vời trong công cuộc xây dựng tình yêu của mình.</p>
+                <p>Khoa học nghiên cứu về rung động của các con số và chữ cái trong tên gọi. Nó là một khoa học rộng lớn và đã được sử dụng từ bao đời nay. Thần số học đã cung cấp các lời khuyên thiết thực cho đời sống của chúng ta như thăng tiến, thành công trong sự nghiệp, tình duyên cuộc sống và hơn thế nữa cho những người sử dụng nó. Hãy lưu ý rằng, thần số học cũng có thể giúp tính toán sự tương thích trong mối quan hệ giữa hai người có các con số khác nhau. Thuật số dựa trên một vài con số (1-9), có những đặc điểm khác nhau, và sự tương thích về mỗi quan hệ hoặc tên yêu được tính toán dựa trên những con số này!</p>
+            </div>
+            <div class="stats">
+                <h3>HÀNG TRIỆU NGƯỜI ĐÃ SỬ DỤNG BÓI TÌNH YÊU CÓ ĐƯỢC KẾT QUẢ NHƯ Ý</h3>
+                <p><strong>3,252,568+</strong><br>NGƯỜI TIN TƯỞNG CÔNG CỤ BÓI TÌNH YÊU THEO TÊN VÀ NGÀY SINH BẰNG THẦN SỐ HỌC!</p>
             </div>
         </div>
+    </section>
 
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/isfj.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
+    <section class="introduction">
+        <div class="container">
+            <!-- Main Content Section -->
             <div class="content">
-                <h3>ISFJ - Người nuôi dưỡng</h3>
-                <div class="img-1">Trung thành, sẵn sàng hi sinh vì người khác</div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/isfp.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>ISFP - Người nghệ sĩ</h3>
-                <div class="img-1">Đam mê và trân trọng thực tại, biết lắng nghe và quan tâm</div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/istp.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>ISTP - Nhà kỹ thuật</h3>
-                <div class="img-1">Tư duy nhanh nhạy, quan sát tốt, phát hiện và giải quyết vấn đề nhanh gọn</div>
-            </div>
-        </div>
-        
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/infp.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>INFP - Người lý tưởng hóa</h3>
-                <div class="img-1">Giàu trí tưởng tượng, đề cao giá trị và niềm tin của bản thân</div>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/infj.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>INFJ - Người che chở</h3>
-                <div class="img-1">Nuôi dưỡng những lý tưởng đúng đắn, coi trọng sự toàn diện, đề cao tính chính trực</div>
-            </div>
-        </div>
+                <h2>ĐÔI LỜI VỀ BÓI TÌNH YÊU THEO TÊN VÀ NGÀY SINH</h2>
+                <!-- Thêm ảnh GIF dưới thẻ h2 -->
+                <img src="https://media1.giphy.com/media/0xhvPJez78AMJMXuCQ/giphy.webp?cid=ecf05e475cxa5tyt6oqgta3tvzskeuibq5xewidbmb2985wt&ep=v1_gifs_search&rid=giphy.webp&ct=g" alt="Love Animation" class="centered-gif">
                 
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/intp.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>INTP - Nhà tư duy</h3>
-                <div class="img-1">Sáng tạo, giàu trí tưởng tượng, thích lý thuyết và phân tích</div>
+                <p>Tình duyên, tình bạn, tình thân là ba loại tình cảm to lớn và quan trọng nhất đối với mỗi người. Chúng ta đều không thể thiếu đi những mối quan hệ này. Chúng đều cần thiết và đóng vai trò quan trọng trong đời sống tinh thần mỗi người. Do hiểu được nhu cầu của bạn đọc về việc tìm hiểu và khám phá sâu hơn tình yêu, chúng tôi đã sử dụng <strong>bói tình yêu</strong> như một công cụ giúp bạn khai mở mọi thứ.</p>
+                <p>Rất nhiều người nghĩ về khả năng hòa hợp trong tình duyên như một thứ gì đó cố định và mang tính công thức, thường dựa trên những thứ như có tính cách giống nhau hoặc sở thích và sở thích chung.</p>
+                <p>Nhưng tập trung vào những yếu tố này có thể khiến bạn cảm thấy rằng khi mọi thứ diễn ra không suôn sẻ thì bạn không thể làm được gì nhiều. Bạn có thể bị mắc kẹt trong vòng suy nghĩ ‘nó không hoạt động vì chúng ta quá khác biệt, vậy cố gắng có ích gì?’</p>
+                <p>Con người không cố định và có công thức chung nào. Mọi thứ liên tục thay đổi, luôn phát triển và cần học hỏi. Khả năng tương thích được tăng cường bởi lượng thời gian bạn dành cho nhau, mức độ mà cả hai bạn sẵn sàng cho và nhận cũng như sự chấp nhận làm việc cùng nhau như một cặp đôi.</p>
+                <p>Tất nhiên, nó sẽ hữu ích nếu bạn bắt đầu với những điểm chung nhất định, nhưng điều này có nhiều khả năng là những thứ như giá trị, niềm tin và ý tưởng của bạn – những thứ quan trọng trong sâu thẳm. Và ngay cả khi đó, bất kỳ mối quan hệ nào cũng đòi hỏi sự bền chặt liên tục để duy trì một kết nối bền chặt.</p>
+                <p>Nếu bạn lo lắng về mức độ hòa hợp của bạn và người ấy, <strong>công cụ bói tình yêu</strong> của chúng tôi sẽ mang lại kết quả chính xác đến 100% chỉ với hai cái tên và ngày sinh. Nó sẽ cho phép bạn suy nghĩ về việc các giá trị của bạn có đồng bộ hay không, bạn đang nỗ lực như thế nào để phát triển và duy trì khả năng tương thích và xem xét những gì bạn có thể làm để cùng nhau phát triển.</p>
             </div>
         </div>
+    </section>
+
+    <!-- New Interface Section -->
+    <section class="blog-boi-tinh-yeu">
+        <div class="container">
+            <h2>BLOG BÓI TÌNH YÊU</h2>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <img src="https://danviet.mediacdn.vn/2020/12/21/la-bai-6-1583462394185504362051-1608533085475-16085330868641160849548.jpg" alt="Bói bài Tây 52 là gì? Cách xem bói như thế nào?">
+                    <h3>Bói bài Tây 52 lá là gì? Cách xem bói Tây 52 lá như thế nào?</h3>
+                    <a href="https://boitinhyeu.com/boi-bai-tay-52-la/" target="_blank">Xem thêm</a>
+                </div>
                 
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/entp.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
+                <div class="blog-post">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7zRn0YPwLtRotUBB04uUZd3U_qGQ06cVijA&usqp=CAU" alt="Bói bài Tây 32 lá: Dự đoán công việc, tình duyên sắp tới">
+                    <h3>Bói bài Tây 32 lá: Dự đoán công việc, tình duyên sắp tới của bạn</h3>
+                    <a href="https://boitinhyeu.com/boi-bai-tay-32-la/" target="_blank">Xem thêm</a>
                 </div>
-            </div>
-            <div class="content">
-                <h3>INTJ - Nhà chiến lược</h3>
-                <div class="img-1">Tầm nhìn xa trông rộng, có khả năng sáng tạo và giải quyết vấn đề tốt</div>
-            </div>
-        </div>
-                
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/enfp.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
+                <div class="blog-post">
+                    <img src="https://phongthuyminhviet.com/wp-content/uploads/2023/11/mui-ten-147-2.jpg" alt="Ý nghĩa mũi tên 147 là gì? Đặc điểm, định hướng phát triển cho người sở hữu mũi tên thực tế">
+                    <h3>Ý nghĩa mũi tên 147 là gì? Đặc điểm, định hướng phát triển cho người sở hữu mũi tên thực tế.</h3>
+                    <a href="https://boitinhyeu.com/mui-ten-147/"target="_blank">Xem thêm</a>
                 </div>
-            </div>
-            <div class="content">
-                <h3>ENFP - Người truyền cảm hứng</h3>
-                <div class="img-1">Nhiệt huyết, sáng tạo, giàu trí tưởng tượng</div>
+                <div class="blog-post">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcjQLa1bPRqe2nX502dx43zhkPkMm2G8dUw&s" alt="Ý nghĩa mũi tên 123 là gì? Đặc điểm, định hướng phát triển cho mũi tên kế hoạch">
+                    <h3>Ý nghĩa mũi tên 123 là gì? Đặc điểm, định hướng phát triển cho mũi tên kế hoạch.</h3>
+                    <a href="https://boitinhyeu.com/mui-ten-123/" target="_blank">Xem thêm</a>
             </div>
         </div>
-                
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/enfj.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-logo">
+                <img src="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\Image\z5562534157967_b27bf6b63d99dcdcf206a955f1f5633c.jpg" alt="Logo">
+                <p>Thần số học - Hành trình khám phá bản thân</p>
+                <p>Đăng ký nhận thông báo mới nhất</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Email">
+                    <button><i class="fa fa-envelope"></i> Gửi</button>
                 </div>
             </div>
-            <div class="content">
-                <h3>ENFJ - Nhà từ thiện</h3>
-                <div class="img-1">Sẵn sàng giúp đỡ người khác, thích thuyết phục và truyền cảm hứng</div>
+            <div class="footer-section footer-links">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="#" title="Blog">Blog</a></li> 
+                    <li><a href="#" title="Giới thiệu">Giới thiệu</a></li>
+                    <li><a href="#" title="Liên hệ">Liên hệ</a></li>
+                    <li><a href="#" title="Giải đáp">Giải đáp </a></li>                      
+                </ul>
+            </div>
+            <div class="footer-section footer-links">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="#" title="Thanh toán">Thanh toán</a></li>
+                    <li><a href="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\học thiết kế\sp\chinhsachbaomat.html" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+                    <li><a href="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\học thiết kế\sp\Dieukhoansd.html" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
+                    <li><a href="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\học thiết kế\sp\chinhsachcookie.html" title="Chính sách sử dụng cookie">Chính sách sử dụng cookie</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-contact">
+                <h3>Thông tin liên hệ</h3>
+                <p><img src="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\Image\phone.png" alt="phone">0974 270 789</p>               
+                <p><img src="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\học thiết kế\sp\images\letter.png" alt="mail">thansohoc@gamil.com</p>
+                <p><img src="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\học thiết kế\sp\images\map.png" alt="địa chỉ">Đống Đa - Hà Nội</p>              
             </div>
         </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/estp.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>ENTP - Người sáng tạo</h3>
-                <div class="img-1">Giàu trí tưởng tượng, thích tranh luận và giải quyết vấn đề</div>
-            </div>
+        <div class="footer-bottom">
+            <p>&copy; Tra cứu thần số học</p>
         </div>
-                
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/entj.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>ENTJ - Người lãnh đạo</h3>
-                <div class="img-1">Quyết đoán, có tầm nhìn, khả năng lãnh đạo tốt</div>
-            </div>
-        </div>
-                
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/estj.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>ESTP - Người hành động</h3>
-                <div class="img-1">Thực tế, quyết đoán, thích hành động</div>
-            </div>
-        </div>
-                
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/esfp.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>ESFP - Người trình diễn</h3>
-                <div class="img-1">Sôi nổi, thích giao tiếp và tận hưởng cuộc sống</div>
-            </div>
-        </div>
-                
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/esfj.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>ESTJ - Người giám sát</h3>
-                <div class="img-1">Quản lý tốt, quyết đoán, thích lập kế hoạch và tổ chức</div>
-            </div>
-        </div>
+    </footer>
 
-        <div class="box">
-            <div class="image">
-                <img src="https://cdn-new.topcv.vn/unsafe/https://static.topcv.vn/v4/image/mbti/personalities/intj.png" alt="">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="cart-btn">Learn by heart</a>
-                    <a href="#" class="fas fa-share"></a>
-                </div>
-            </div>
-            <div class="content">
-                <h3>INTJ - Nhà khoa học</h3>
-                <div class="img-1">Phân tích, giải quyết vấn đề hiệu quả</div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Lý do section starts -->
-<section class="review" id="review">
-    <h1 class="heading">Tại sao <span>nên làm trắc nghiệm MBTI?</span></h1>
-    <div class="box-container">
-        <div class="box">
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="user">
-                <div class="user-info">
-                    <h3>Trong sự nghiệp</h3>
-                </div>
-            </div>
-            <p>Mỗi cá nhân có thể sử dụng MBTI như một bài trắc nghiệm nghề nghiệp nhằm tìm ra công việc phù hợp nhất với xu hướng tính cách của mình</p>
-            <span class="fas fa-quote-right"></span>
-        </div>
-        <div class="box">
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="user">
-                <div class="user-info">
-                    <h3>Trong cuộc sống</h3>
-                </div>
-            </div>
-            <p>Trong các mối quan hệ, MBTI giúp bạn hiểu hơn về bản thân và đối phương, từ đó xây dựng mối quan hệ tốt đẹp hơn</p>
-            <span class="fas fa-quote-right"></span>
-        </div>
-        <div class="box">
-            <div class="stars">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-            </div>
-            <div class="user">
-                <div class="user-info">
-                    <h3>Trong học tập</h3>
-                </div>
-            </div>
-            <p>MBTI giúp học sinh, sinh viên chọn lựa ngành học phù hợp với tính cách, tăng hiệu quả học tập</p>
-            <span class="fas fa-quote-right"></span>
-        </div>
-    </div>
-</section>
-<!-- Test section starts -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-<section class="test" id="test">
-    <h1 class="heading"><span>Câu hỏi </span>trắc nghiệm</h1>
-    <div class="container">
-        <div class="column">
-        <div class="page-header">
-            <h1></h1>
-        </div>
-        <ol class="questions column1">
-            <li><strong>Trong một bữa tiệc, bạn thường:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q1" value="e">
-                        Nói chuyện với tất cả mọi người, kể cả người lạ
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q1" value="i">
-                        Nói chuyện với những người bạn quen
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Bạn có xu hướng nào mạnh hơn?</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q2" value="s">
-                        Hướng tới những điều thực tế và cụ thể
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q2" value="n">
-                        Hướng tới các dự đoán trong tương lai
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Tình huống nào khiến bạn cảm thấy tệ hơn?</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q3" value="s">
-                        Mọi thứ mông lung, không rõ ràng
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q3" value="n">
-                        Nhàm chán, đơn điệu
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Bạn thấy ấn tượng bởi:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q4" value="t">
-                        Nguyên tắc
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q4" value="f">
-                        Cảm xúc
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Bạn bị hấp dẫn bởi:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q5" value="t">
-                        Sự thuyết phục
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q5" value="f">
-                        Thực tế mắt thấy tai nghe
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Bạn muốn thực hiện công việc theo kiểu:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q6" value="j">
-                        Có deadline (thời hạn) cụ thể
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q6" value="p">
-                        Xong khi nào cũng được
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Bạn có xu hướng lựa chọn:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q7" value="j">
-                        Khá cẩn thận
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q7" value="p">
-                        Tin vào cảm giác khi lựa chọn
-                    </label>
-                </div>
-            </li>
-        </ol>
-    </div>
-    <div class="column">
-        <ol class="questions column2">
-            <li><strong>Tại một bữa tiệc, bạn thường:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q8" value="e">
-                        Chơi tới bến, giàu năng lượng
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q8" value="i">
-                        Ra về sớm, cảm thấy mệt và xuống sức
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Bạn bị thu hút hơn bởi kiểu người:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q9" value="s">
-                        Người có khả năng xét đoán tốt
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q9" value="n">
-                        Người giàu trí tưởng tượng
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Bạn quan tâm hơn đến:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q10" value="s">
-                        Những việc thực tế xảy ra
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q10" value="n">
-                        Những việc có thể xảy ra
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Khi đánh giá người khác, bạn thường:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q11" value="t">
-                        Dựa trên các quy định, luật lệ
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q11" value="f">
-                        Dựa trên hoàn cảnh cụ thể
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Khi tiếp cận người khác, bạn nghiêng về:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q12" value="t">
-                        Tiếp cận khách quan
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q12" value="f">
-                        Tiếp cận cá nhân
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Ý nào mô tả bạn đúng hơn:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q13" value="j">
-                        Đúng giờ
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q13" value="p">
-                        Ung dung, không vội vàng
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Bạn quan tâm hơn đến những việc:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q14" value="j">
-                        Còn dở dang
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q14" value="p">
-                        Đã hoàn thành
-                    </label>
-                </div>
-            </li>
-        </ol>
-    </div>
-    <div class="column">
-        <ol class="questions column3">
-            <li><strong>Trong nhóm chơi thân, bạn là người:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q15" value="e">
-                        Luôn nắm bắt kịp thời thông tin về các vấn đề của mọi người
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q15" value="i">
-                        Thường biết thông tin sau
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Khi thực hiện những việc thông thường, bạn chọn cách:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q16" value="s">
-                        Làm theo cách thông thường
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q16" value="n">
-                        Sáng tạo cách của riêng mình
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Theo bạn, các nhà văn nên:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q17" value="s">
-                        Viết những gì họ nghĩ, và nghĩ những gì họ viết, một cách rõ ràng
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q17" value="n">
-                        Diễn đạt sự việc bằng cách so sánh, liên tưởng
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Điều gì hấp dẫn bạn hơn?:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q18" value="t">
-                        Sự nhất quán về tư duy, suy nghĩ
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q18" value="f">
-                        Sự hòa hợp trong các mối quan hệ với mọi người
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Bạn cảm thấy thoải mái hơn khi đưa ra nhận xét:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q19" value="t">
-                        Một cách Logic
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q19" value="f">
-                        Một cách có ý nghĩa, có giá trị
-                    </label>
-                </div>
-            </li>
-    
-            <li><strong>Bạn thích những thứ:</strong><br>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q20" value="j">
-                        Chưa được quyết định
-                    </label>
-                </div>
-                <div class="radio">
-                    <label>
-                        <input type="radio" name="q20" value="p">
-                        Được định trước
-                    </label>
-                </div>
-            </li>
-        </ol>
-    </div>
-    
-    
-    
-                <!-- Thêm các phần tử này sau bộ câu hỏi -->
-                <div id="action-buttons" class="text-center">
-                    <p id="scroll-down" class="hidden">( <i>Cuộn trang để xem kết quả</i> )</p>
-                    <p><button id="submit" class="btn btn-primary btn-lg">Hiện kết quả</button></p>
-                </div>
-        
-                <div id="results" class="text-center hidden">
-                    <br><br>
-                    <h2 id="type"></h2>
-                    <p id="type-details" class="type-description hidden">
-                        <strong id="type-title"></strong><br>
-                        <strong><span id="type-percentage"></span> của dân số</strong><br>
-                        <span id="type-description"></span><br>
-                        <a id="type-site" href="#" target="_blank">Xem thêm về nhóm tính cách của bạn tại đây</a>
-                    </p>
-                    <p class="pull-left"><span class="badge">E</span> (<span id="eScore"></span>%)</p>
-                    <p class="pull-right">(<span id="iScore"></span>%) <span class="badge">I</span></p>
-                    <div class="progress">
-                        <div id="eiChart" class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-                        <div class="center-bar"></div>
-                    </div>
-                    <br class="clearfix">
-                    
-                    <p class="pull-left"><span class="badge">S</span> (<span id="sScore"></span>%)</p>
-                    <p class="pull-right">(<span id="nScore"></span>%) <span class="badge">N</span></p>
-                    <div class="progress">
-                        <div id="snChart" class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-                        <div class="center-bar"></div>
-                    </div>
-                    <br class="clearfix">
-                    
-                    <p class="pull-left"><span class="badge">T</span> (<span id="tScore"></span>%)</p>
-                    <p class="pull-right">(<span id="fScore"></span>%) <span class="badge">F</span></p>
-                    <div class="progress">
-                        <div id="tfChart" class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-                        <div class="center-bar"></div>
-                    </div>
-                    <br class="clearfix">
-                    
-                    <p class="pull-left"><span class="badge">J</span> (<span id="jScore"></span>%)</p>
-                    <p class="pull-right">(<span id="pScore"></span>%) <span class="badge">P</span></p>
-                    <div class="progress">
-                        <div id="jpChart" class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
-                        <div class="center-bar"></div>
-                    </div>
-                    <br class="clearfix">
-                </div>
-            </div>
-        </section>
-
-
-
-<!-- FAQ section starts -->
-<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
-<section class="faq" id="faq">
-    <h1 class="heading">Câu hỏi <span>thường gặp</span></h1>
-    <div id="wrapper">
-        <div class="accordion">
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <h3>Trắc nghiệm MBTI bắt nguồn từ đâu?</h3>
-                    <i class="arrow fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-body">
-                    Bài test MBTI có nền tảng từ thuyết phân loại tính cách của Carl Gustav Jung - bác sĩ tâm thần học người Thụy Sĩ, cha đẻ của Tâm lý học phân tích; sau đó được Katharine Cook Briggs cùng con gái của bà, Isabel Briggs Myers phát triển và hoàn thiện trong chiến tranh thế giới thứ hai. Tuy nhiên, MBTI chỉ thực sự trở nên nổi tiếng và phổ biến khi được giới thiệu ở hai cuốn “Please understand me” I và II của nhà tâm lý học David Keirsey từ những năm 50 của thế kỷ 20, và được người Nhật đưa vào ứng dụng thực tiễn từ năm 1962.
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <h3>MBTI có bao nhiêu loại tính cách?</h3>
-                    <i class="arrow fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-body">
-                    MBTI có tất cả 16 loại tính cách khác nhau. Cách phân loại này dựa trên việc kết hợp 8 yếu tố chức năng và nhận thức, nằm trong 4 cặp thuộc tính đối lập sau:
-                    <ul>
-                        <li>(I) Hướng nội - (E) Hướng ngoại</li>
-                        <li>(S) Giác quan - (N) Trực giác</li>
-                        <li>(T) Lý trí - (F) Cảm xúc</li>
-                        <li>(J) Nguyên tắc - (P) Linh hoạt</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <h3>Kết quả MBTI có thay đổi không?</h3>
-                    <i class="arrow fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-body">
-                    Tính cách (hay kết quả MBTI) của bạn có thể thay đổi theo thời gian dựa trên các yếu tố: hoàn cảnh, tâm trạng, nhận thức về bản thân và thế giới quan tại mỗi giai đoạn khác nhau trong cuộc đời. Tuy nhiên, theo thống kê của The Myers-Briggs Company vào năm 2009, có tới 72% số người kiểm tra lại MBTI cho ra kết quả đồng nhất. Con số này cao hơn hẳn những bài trắc nghiệm tính cách khác như DISC hay NEO.
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <h3>MBTI có thể dự đoán tương lai không?</h3>
-                    <i class="arrow fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-body">
-                    MBTI không có khả năng tiên đoán về tương lai của mỗi người, nó chỉ gợi ý về khuynh hướng con người mà bạn có thể trở thành. Rõ ràng rằng, tính cách chỉ là một trong vô số các yếu tố quyết định cuộc đời bạn, và việc lấy nó làm tiêu chí duy nhất để dự đoán tương lai sẽ không bao giờ là sự lựa chọn khôn ngoan. Thay vào đó, hãy sử dụng MBTI như một công cụ giúp bạn gia tăng sự tự nhận thức, khai thác tối đa điểm mạnh, hạn chế điểm yếu và đưa ra các quyết định đúng đắn trong tương lai.
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <h3>Đâu là nhóm tính cách MBTI phổ biến nhất?</h3>
-                    <i class="arrow fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-body">
-                    Hiện chưa có thống kê chính xác về nhóm tính cách MBTI phổ biến nhất. Tuy nhiên, theo thống kê của TopCV từ Sổ tay hướng dẫn MBTI ® Manual for the Global Step I™ and Step II™ Assessments (Myers, McCaulley, Quenk, & Hammer, 2018) được thực hiện bởi The Myers-Briggs Company, một khảo sát được thực hiện với 16,773 cá nhân tại 20 quốc gia, nhóm tính cách MBTI phổ biến nhất là ISTJ với khoảng 13%.
-                </div>
-            </div>
-
-            <div class="accordion-item">
-                <div class="accordion-header">
-                    <h3>Đâu là nhóm tính cách MBTI hiếm nhất?</h3>
-                    <i class="arrow fas fa-chevron-down"></i>
-                </div>
-                <div class="accordion-body">
-                    Hiện chưa có thống kê chính xác về nhóm tính cách MBTI hiếm nhất. Tuy nhiên, theo thống kê của TopCV từ Sổ tay hướng dẫn MBTI ® Manual for the Global Step I™ and Step II™ Assessments (Myers, McCaulley, Quenk, & Hammer, 2018) được thực hiện bởi The Myers-Briggs Company, nhóm tính cách MBTI hiếm nhất là INFJ với khoảng 1%
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Your first script block -->
-<script>
-    $(document).ready(function(){
-        $('.accordion-item.active .accordion-body').slideDown();
-        $('.accordion-header').click(function(){
-            $(this).parent().toggleClass('active');
-            $(this).next('.accordion-body').slideToggle();
-        });
-    });
-</script>
-
-<!-- Your second script block -->
-<script>
-    document.querySelectorAll('header .navbar a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            if (document.getElementById('toggler').checked) {
-                document.getElementById('toggler').checked = false;
-            }
-        });
-    });
-</script>
+    <script>
+        // JavaScript to handle button click
+        document.getElementById("lovePredictButton").onclick = function() {
+            window.location.href = "main.html";
+        };
+    </script>
 </body>
 </html>
-

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bói Tình Yêu</title>
+    <link rel="stylesheet" href="main.css">
+    <!-- Adding Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" title="Trang chủ">Trang chủ</a></li>
+                    <li><a href="#" title="Giới thiệu">Giới thiệu</a></li>
+                    <li><a href="#" title="Tra cứu">Tra cứu</a></li>
+                    <li><a href="#" title="Dịch vụ">Dịch vụ</a></li>
+                    <li><a href="#" title="Blog">Blog</a></li>
+                    <li><a href="#" title="Đăng nhập">Đăng nhập</a></li>
+                    <li><a href="#" title="Tìm kiếm">Tìm kiếm</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>COI BÓI TÌNH YÊU CHÍNH XÁC 100%<br> BẰNG APP BÓI TÌNH DUYÊN THẦN SỐ HỌC</h1>
+        <img src="https://media4.giphy.com/media/l0HU2sYgCZh3HiKnS/giphy.webp?cid=ecf05e47ltp4blqpazjysv7fg5vvfu1gcg452jfcehm2moqk&ep=v1_gifs_search&rid=giphy.webp&ct=g" alt="Love Animation" class="centered-gif">
+        <form id="loveCalculatorForm">
+            <div class="section">
+                <h2>Thông tin của bạn:</h2>
+                <label for="yourName">Họ tên khai sinh:</label>
+                <input type="text" id="yourName" name="yourName" required>
+
+                <div class="date-group">
+                    <div class="date-item">
+                        <label for="yourDay">Ngày:</label>
+                        <select id="yourDay" name="yourDay"></select>
+                    </div>
+                    <div class="date-item">
+                        <label for="yourMonth">Tháng:</label>
+                        <select id="yourMonth" name="yourMonth"></select>
+                    </div>
+                    <div class="date-item">
+                        <label for="yourYear">Năm sinh:</label>
+                        <input type="text" id="yourYear" name="yourYear" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Thông tin của người yêu/vợ/chồng:</h2>
+                <label for="partnerName">Họ tên khai sinh:</label>
+                <input type="text" id="partnerName" name="partnerName" required>
+
+                <div class="date-group">
+                    <div class="date-item">
+                        <label for="partnerDay">Ngày:</label>
+                        <select id="partnerDay" name="partnerDay"></select>
+                    </div>
+                    <div class="date-item">
+                        <label for="partnerMonth">Tháng:</label>
+                        <select id="partnerMonth" name="partnerMonth"></select>
+                    </div>
+                    <div class="date-item">
+                        <label for="partnerYear">Năm sinh:</label>
+                        <input type="text" id="partnerYear" name="partnerYear" required>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">XEM TƯƠNG HỢP</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-logo">
+                <img src="images/logo.png" alt="Logo">
+                <p>Thần số học - Hành trình khám phá bản thân</p>
+                <p>Đăng ký nhận thông báo mới nhất</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Email">
+                    <button><i class="fa fa-envelope"></i> Gửi</button>
+                </div>
+            </div>
+            <div class="footer-section footer-links">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="#" title="Blog">Blog</a></li> 
+                    <li><a href="#" title="Giới thiệu">Giới thiệu</a></li>
+                    <li><a href="#" title="Liên hệ">Liên hệ</a></li>
+                    <li><a href="#" title="Giải đáp">Giải đáp </a></li>                      
+                </ul>
+            </div>
+            <div class="footer-section footer-links">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="#" title="Thanh toán">Thanh toán</a></li>
+                    <li><a href="#" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+                    <li><a href="#" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
+                    <li><a href="#" title="Chính sách sử dụng cookie">Chính sách sử dụng cookie</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-contact">
+                <h3>Thông tin liên hệ</h3>
+                <p><img src="images/phone.png" alt="phone" style="width: 20px; height: 20px;"> 0974 270 789</p>               
+                <p><img src="images/letter.png" alt="mail" style="width: 20px; height: 20px;"> thansohoc@gamil.com</p>
+                <p><img src="images/map.png" alt="địa chỉ" style="width: 20px; height: 20px;"> Đống Đa - Hà Nội</p>              
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Tra cứu thần số học</p>
+        </div>
+    </footer>
+</body>
+</html>
