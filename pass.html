@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỔI MẬT KHẨU</title>
+    <link rel="stylesheet" href="pass.css">
+</head>
+<body>
+    <div id="change-password-form" class="fade-in">
+        <h2 class="slide-down">THIẾT LẬP LẠI MẬT KHẨU</h2>
+        <form id="password-form" class="fade-in">
+            <label for="current-password">Mật khẩu hiện tại <span class="asterisk">*</span></label>
+            <input type="password" id="current-password" name="current-password" required>
+
+            <label for="new-password">Mật khẩu mới <span class="asterisk">*</span></label>
+            <input type="password" id="new-password" name="new-password" required>
+
+            <label for="confirm-password">Nhập lại mật khẩu mới <span class="asterisk">*</span></label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit" class="bounce">Đổi mật khẩu</button>
+        </form>
+
+        <!-- Các dòng cảnh báo -->
+        <div id="password-error" class="error-message"></div>
+    </div>
+
+    <script src="pass.js"></script>
+</body>
+</html>

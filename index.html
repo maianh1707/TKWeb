@@ -1,159 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Love Compatibility</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Adding Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>Login Page in HTML with CSS Code Example</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <img src="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\Image\z5562534157967_b27bf6b63d99dcdcf206a955f1f5633c.jpg" alt="Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#" title="Trang chủ">Trang chủ</a></li>
-                    <li><a href="#" title="Giới thiệu">Giới thiệu</a></li>
-                    <li><a href="#" title="Tra cứu">Tra cứu</a></li>
-                    <li><a href="#" title="Dịch vụ">Dịch vụ</a></li>
-                    <li><a href="#" title="Blog">Blog</a></li>
-                    <li><a href="#" title="Đăng nhập">Đăng nhập</a></li>
-                    <li><a href="#" title="Tìm kiếm">Tìm kiếm</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle">
-                <i class="fa fa-bars"></i>
-            </div>
-        </div>
-    </header>
+<div class="box-form">
+  <div class="left">
+    <div class="overlay">
+      <h1>BOIVUI.VN</h1>
+      <p>Trang web bói vui là nơi thú vị và hữu ích để khám phá những dự đoán thú vị về tương lai của bạn. 
+        Với các câu hỏi đơn giản, bạn có thể khám phá những lời tư vấn vui nhộn và đầy bất ngờ từ các phép bói đa dạng.</p>
+    </div>
+  </div>
+  
+  <div class="right">
+    <h5>Đăng nhập</h5>
+    <p>Bạn chưa có tài khoản? Hãy đăng ký khóa học VIP để được cấp tài khoản bạn nhé!</p>
+    <div class="inputs">
+      <input id="username" type="text" placeholder="Tên đăng nhập">
+      <br>
+      <input id="password" type="password" placeholder="Mật khẩu">
+    </div>
+    
+    
+    <button onclick="login()">Đăng nhập</button>
+  </div>
+</div>
 
-    <section class="hero">
-        <div class="container">
-            <!-- Thêm ảnh động vào phần hero 
-            <img src="https://media4.giphy.com/media/241LJn6LFZhlkhrumM/200.webp?cid=ecf05e47u73to5rlrthsbxvg1b7zobpf5i6qm23qxgrm9coc&ep=v1_gifs_search&rid=200.webp&ct=g" alt="Love Animation" >-->
-            
-            <!-- Khung bao quanh tiêu đề, phụ đề, mô tả và nút -->
-            <div class="hero-box">
-                <h1>GIẢI MÃ TÌNH CẢM CỦA BẠN</h1>
-                <p class="subtitle">ĐƠN GIẢN ✦ DỄ DÀNG ✦ MIỄN PHÍ</p>
-                <p class="description">Công cụ bói tình yêu theo tên và ngày sinh chính xác 100%</p>
-                <button id="lovePredictButton">XEM BÓI TÌNH YÊU NGAY</button>
-            </div>
-        </div>
-    </section>
+<script>
+function login() {
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+  
+  // Get the stored password from localStorage
+  var storedPassword = localStorage.getItem('password') || '1'; // Default password is '1'
+  
+  // Kiểm tra tên đăng nhập và mật khẩu
+  if (username === 'admin' && password === storedPassword) {
+    // Chuyển hướng sang trang giaodien.html
+    window.location.href = 'giaodien.html';
+  } else {
+    alert('Tên đăng nhập hoặc mật khẩu không đúng!');
+  }
+}
+</script>
 
-    <!-- New Content Section based on the provided image -->
-    <section class="content-section">
-        <div class="container">
-            <div class="content">
-                <h2>BẮT ĐẦU HÀNH TRÌNH KHÁM PHÁ MỘT NỬA CÒN LẠI CỦA BẠN VỚI APP BÓI TÌNH YÊU</h2>
-                <p>Mục tiêu số 1 của bói tình yêu là trở thành người đồng hành cùng bạn trong hành trình chinh phục và thấu hiểu một nửa còn lại. Bạn sẽ tìm thấy rõ được tính cách của người ấy và giải pháp giúp hai người hòa hợp với nhau. Đội ngũ tuyệt vời của chúng tôi có chuyên gia trong lĩnh vực tư vấn tâm lý giúp phân tích chính xác mong muốn của từng cá nhân. <strong>Công cụ bói tình yêu theo tên</strong> được tạo ra để giúp bạn hiểu được tính cách của từng người, từ đó hai bạn sẽ tìm ra những gợi ý tuyệt vời trong công cuộc xây dựng tình yêu của mình.</p>
-                <p>Khoa học nghiên cứu về rung động của các con số và chữ cái trong tên gọi. Nó là một khoa học rộng lớn và đã được sử dụng từ bao đời nay. Thần số học đã cung cấp các lời khuyên thiết thực cho đời sống của chúng ta như thăng tiến, thành công trong sự nghiệp, tình duyên cuộc sống và hơn thế nữa cho những người sử dụng nó. Hãy lưu ý rằng, thần số học cũng có thể giúp tính toán sự tương thích trong mối quan hệ giữa hai người có các con số khác nhau. Thuật số dựa trên một vài con số (1-9), có những đặc điểm khác nhau, và sự tương thích về mỗi quan hệ hoặc tên yêu được tính toán dựa trên những con số này!</p>
-            </div>
-            <div class="stats">
-                <h3>HÀNG TRIỆU NGƯỜI ĐÃ SỬ DỤNG BÓI TÌNH YÊU CÓ ĐƯỢC KẾT QUẢ NHƯ Ý</h3>
-                <p><strong>3,252,568+</strong><br>NGƯỜI TIN TƯỞNG CÔNG CỤ BÓI TÌNH YÊU THEO TÊN VÀ NGÀY SINH BẰNG THẦN SỐ HỌC!</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="introduction">
-        <div class="container">
-            <!-- Main Content Section -->
-            <div class="content">
-                <h2>ĐÔI LỜI VỀ BÓI TÌNH YÊU THEO TÊN VÀ NGÀY SINH</h2>
-                <!-- Thêm ảnh GIF dưới thẻ h2 -->
-                <img src="https://media1.giphy.com/media/0xhvPJez78AMJMXuCQ/giphy.webp?cid=ecf05e475cxa5tyt6oqgta3tvzskeuibq5xewidbmb2985wt&ep=v1_gifs_search&rid=giphy.webp&ct=g" alt="Love Animation" class="centered-gif">
-                
-                <p>Tình duyên, tình bạn, tình thân là ba loại tình cảm to lớn và quan trọng nhất đối với mỗi người. Chúng ta đều không thể thiếu đi những mối quan hệ này. Chúng đều cần thiết và đóng vai trò quan trọng trong đời sống tinh thần mỗi người. Do hiểu được nhu cầu của bạn đọc về việc tìm hiểu và khám phá sâu hơn tình yêu, chúng tôi đã sử dụng <strong>bói tình yêu</strong> như một công cụ giúp bạn khai mở mọi thứ.</p>
-                <p>Rất nhiều người nghĩ về khả năng hòa hợp trong tình duyên như một thứ gì đó cố định và mang tính công thức, thường dựa trên những thứ như có tính cách giống nhau hoặc sở thích và sở thích chung.</p>
-                <p>Nhưng tập trung vào những yếu tố này có thể khiến bạn cảm thấy rằng khi mọi thứ diễn ra không suôn sẻ thì bạn không thể làm được gì nhiều. Bạn có thể bị mắc kẹt trong vòng suy nghĩ ‘nó không hoạt động vì chúng ta quá khác biệt, vậy cố gắng có ích gì?’</p>
-                <p>Con người không cố định và có công thức chung nào. Mọi thứ liên tục thay đổi, luôn phát triển và cần học hỏi. Khả năng tương thích được tăng cường bởi lượng thời gian bạn dành cho nhau, mức độ mà cả hai bạn sẵn sàng cho và nhận cũng như sự chấp nhận làm việc cùng nhau như một cặp đôi.</p>
-                <p>Tất nhiên, nó sẽ hữu ích nếu bạn bắt đầu với những điểm chung nhất định, nhưng điều này có nhiều khả năng là những thứ như giá trị, niềm tin và ý tưởng của bạn – những thứ quan trọng trong sâu thẳm. Và ngay cả khi đó, bất kỳ mối quan hệ nào cũng đòi hỏi sự bền chặt liên tục để duy trì một kết nối bền chặt.</p>
-                <p>Nếu bạn lo lắng về mức độ hòa hợp của bạn và người ấy, <strong>công cụ bói tình yêu</strong> của chúng tôi sẽ mang lại kết quả chính xác đến 100% chỉ với hai cái tên và ngày sinh. Nó sẽ cho phép bạn suy nghĩ về việc các giá trị của bạn có đồng bộ hay không, bạn đang nỗ lực như thế nào để phát triển và duy trì khả năng tương thích và xem xét những gì bạn có thể làm để cùng nhau phát triển.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- New Interface Section -->
-    <section class="blog-boi-tinh-yeu">
-        <div class="container">
-            <h2>BLOG BÓI TÌNH YÊU</h2>
-            <div class="blog-posts">
-                <div class="blog-post">
-                    <img src="https://danviet.mediacdn.vn/2020/12/21/la-bai-6-1583462394185504362051-1608533085475-16085330868641160849548.jpg" alt="Bói bài Tây 52 là gì? Cách xem bói như thế nào?">
-                    <h3>Bói bài Tây 52 lá là gì? Cách xem bói Tây 52 lá như thế nào?</h3>
-                    <a href="https://boitinhyeu.com/boi-bai-tay-52-la/" target="_blank">Xem thêm</a>
-                </div>
-                
-                <div class="blog-post">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7zRn0YPwLtRotUBB04uUZd3U_qGQ06cVijA&usqp=CAU" alt="Bói bài Tây 32 lá: Dự đoán công việc, tình duyên sắp tới">
-                    <h3>Bói bài Tây 32 lá: Dự đoán công việc, tình duyên sắp tới của bạn</h3>
-                    <a href="https://boitinhyeu.com/boi-bai-tay-32-la/" target="_blank">Xem thêm</a>
-                </div>
-                <div class="blog-post">
-                    <img src="https://phongthuyminhviet.com/wp-content/uploads/2023/11/mui-ten-147-2.jpg" alt="Ý nghĩa mũi tên 147 là gì? Đặc điểm, định hướng phát triển cho người sở hữu mũi tên thực tế">
-                    <h3>Ý nghĩa mũi tên 147 là gì? Đặc điểm, định hướng phát triển cho người sở hữu mũi tên thực tế.</h3>
-                    <a href="https://boitinhyeu.com/mui-ten-147/"target="_blank">Xem thêm</a>
-                </div>
-                <div class="blog-post">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDcjQLa1bPRqe2nX502dx43zhkPkMm2G8dUw&s" alt="Ý nghĩa mũi tên 123 là gì? Đặc điểm, định hướng phát triển cho mũi tên kế hoạch">
-                    <h3>Ý nghĩa mũi tên 123 là gì? Đặc điểm, định hướng phát triển cho mũi tên kế hoạch.</h3>
-                    <a href="https://boitinhyeu.com/mui-ten-123/" target="_blank">Xem thêm</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section footer-logo">
-                <img src="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\Image\z5562534157967_b27bf6b63d99dcdcf206a955f1f5633c.jpg" alt="Logo">
-                <p>Thần số học - Hành trình khám phá bản thân</p>
-                <p>Đăng ký nhận thông báo mới nhất</p>
-                <div class="newsletter">
-                    <input type="email" placeholder="Email">
-                    <button><i class="fa fa-envelope"></i> Gửi</button>
-                </div>
-            </div>
-            <div class="footer-section footer-links">
-                <h3>Hỗ trợ khách hàng</h3>
-                <ul>
-                    <li><a href="#" title="Blog">Blog</a></li> 
-                    <li><a href="#" title="Giới thiệu">Giới thiệu</a></li>
-                    <li><a href="#" title="Liên hệ">Liên hệ</a></li>
-                    <li><a href="#" title="Giải đáp">Giải đáp </a></li>                      
-                </ul>
-            </div>
-            <div class="footer-section footer-links">
-                <h3>Chính sách</h3>
-                <ul>
-                    <li><a href="#" title="Thanh toán">Thanh toán</a></li>
-                    <li><a href="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\học thiết kế\sp\chinhsachbaomat.html" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
-                    <li><a href="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\học thiết kế\sp\Dieukhoansd.html" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
-                    <li><a href="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\học thiết kế\sp\chinhsachcookie.html" title="Chính sách sử dụng cookie">Chính sách sử dụng cookie</a></li>
-                </ul>
-            </div>
-            <div class="footer-section footer-contact">
-                <h3>Thông tin liên hệ</h3>
-                <p><img src="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\Image\phone.png" alt="phone">0974 270 789</p>               
-                <p><img src="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\học thiết kế\sp\images\letter.png" alt="mail">thansohoc@gamil.com</p>
-                <p><img src="C:\Users\Mai Anh\Desktop\Thiết kế web\BTLTKW\học thiết kế\sp\images\map.png" alt="địa chỉ">Đống Đa - Hà Nội</p>              
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; Tra cứu thần số học</p>
-        </div>
-    </footer>
-
-    <script>
-        // JavaScript to handle button click
-        document.getElementById("lovePredictButton").onclick = function() {
-            window.location.href = "main.html";
-        };
-    </script>
 </body>
 </html>

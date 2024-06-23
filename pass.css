@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#change-password-form {
+    width: 100%;
+    max-width: 350px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: fadeIn 1s ease-in-out; /* Thêm hiệu ứng fadeIn */
+}
+
+#change-password-form h2 {
+    color: #8B008B;
+    text-align: center;
+    margin-top: 0;
+    animation: slideDown 0.5s ease-in-out; /* Thêm hiệu ứng slideDown */
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input[type="password"] {
+    width: calc(100% - 22px);
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease-in-out;
+}
+
+button[type="submit"] {
+    width: 45%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: block; /* Add this line to make the button a block element */
+    margin: 20px auto; /* Add this line to center the button and add some space above it */
+    animation: bounce 0.5s ease-in-out infinite alternate; /* Thêm hiệu ứng bounce */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.success-message {
+    color: #4CAF50;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+
