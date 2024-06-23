@@ -1,3 +1,79 @@
+// Lưu trữ danh sách các câu hỏi
+var allCards = document.querySelectorAll(".card");
+
+function searchQuestions(event) {
+    if (event) {
+        event.preventDefault(); // Ngăn chặn hành động mặc định của form submit
+    }
+
+    var input = document.getElementById("searchInput").value.trim().toLowerCase();
+    var results = [];
+
+    if (!input) {
+        displayAllQuestions(); // Nếu không có từ khóa nhập vào, hiển thị lại tất cả câu hỏi
+        return;
+    }
+
+    allCards.forEach(function(card) {
+        var questionText = card.querySelector(".card-front p").textContent.toLowerCase();
+        var matches = countMatches(questionText, input);
+        if (matches > 0) {
+            results.push({ card: card, matches: matches });
+        }
+    });
+
+    var cardGrid = document.querySelector(".card-grid");
+    cardGrid.textContent = ""; // Xóa hết nội dung hiện tại của grid
+
+    if (results.length === 0) {
+        var noResultMessage = document.createElement("p");
+        noResultMessage.textContent = "Không tìm thấy kết quả phù hợp.";
+        cardGrid.appendChild(noResultMessage);
+    } else {
+        results.sort(function(a, b) {
+            return b.matches - a.matches;
+        });
+
+        results.forEach(function(result) {
+            cardGrid.appendChild(result.card);
+        });
+    }
+}
+
+function countMatches(str, keyword) {
+    var count = 0;
+    var position = str.indexOf(keyword);
+    while (position !== -1) {
+        count++;
+        position = str.indexOf(keyword, position + 1);
+    }
+    return count;
+}
+
+function displayAllQuestions() {
+    var cardGrid = document.querySelector(".card-grid");
+    cardGrid.textContent = ""; // Xóa hết nội dung hiện tại của grid
+
+    allCards.forEach(function(card) {
+        cardGrid.appendChild(card);
+    });
+}
+
+// Thêm sự kiện để lật thẻ khi nhấp vào
+allCards.forEach(function(card) {
+    card.addEventListener("click", function() {
+        card.classList.toggle("flipped");
+    });
+});
+
+var searchForm = document.getElementById("searchForm");
+searchForm.addEventListener("submit", searchQuestions);
+
+// Gắn sự kiện khi người dùng ấn nút tìm kiếm
+var searchButton = document.querySelector(".search-bar button");
+searchButton.addEventListener("click", function(event) {
+    searchQuestions(event);
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     const menuToggle = document.querySelector(".menu-toggle");

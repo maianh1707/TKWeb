@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="giaidap.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../trangchu/home.html" title="Trang chủ">Trang chủ</a></li>
+                    <li><a href="../Gioi thiệu/gioithieu.html" title="Giới thiệu">Giới thiệu</a></li>
+                    <li>
+                        <a href="#" title="Tra cứu">Tra cứu</a>
+                        <ul class="dropdown">
+                            <li><a href="../Tra cứu/Bói tình yêu/main.html">Bói tình yêu</a></li>
+                            <li><a href="../Tra cứu/Bói cung hoàng đạo/Cunghoangdao.html">Bói theo cung hoàng đạo</a></li>
+                            <li><a href="../Tra cứu/MBTI/index.html">Trắc nghiệm MBTI</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="Dịch vụ">Dịch vụ</a>
+                        <ul class="dropdown">
+                            <li><a href="../Dịch vụ/mua gói vip/product.html">Mua vip</a></li>
+                            <li><a href="../Dịch vụ/trò chuyển cùng chuyên gia/index.html">Trò chuyện cùng chuyên gia</a></li>
+                            <li><a href="../Dịch vụ/thanh toán/thanhtoan.html">Thanh toán</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="Blog">Blog</a>
+                        <ul class="dropdown">
+                            <li><a href="../Blog/blog bói tình yêu/index.html">Tình yêu</a></li>
+                            <li><a href="../Blog/blog cung hoàng đạo/BlogCunghoangdao.html">Cung hoàng đạo</a></li>
+                            <li><a href="../Blog/blog MBTI/blog.html">MBTI</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="icon-container">
+                <div class="search-container">
+                    <input type="text" class="search-box" placeholder="Tìm kiếm...">
+                    <button class="search-button" aria-label="Search"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="account">
+                    <button class="account-button" aria-label="Account"><i class="fas fa-user"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="../../Tài khoản/Đăng nhập/index.html">Đăng nhập</a></li>
+                        <li><a href="#">Đăng ký</a></li>
+                    </ul>
+                </div>
+                
+                <button class="cart-button" aria-label="Cart" onclick="window.location.href='../Dịch vụ/mua gói vip/cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                </button> 
+                
+                
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="question">
+            <h2>Xin chào, chúng tôi có thể giúp gì cho bạn?</h2>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Nhập từ khóa hoặc nội dung cần tìm">
+                <button onclick="searchQuestions()">Tìm</button>
+            </div>
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://tracuuthansohoc.com/wp-content/uploads/2023/05/icon-su-tu.png" alt="Problem 1">
+                            <p>Tôi có thể tra cứu thần số học của mình miễn phí không?</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Có, bạn có thể tra cứu thần số học cơ bản của mình miễn phí trên trang web của chúng tôi. Chỉ cần nhập ngày sinh và tên của bạn để bắt đầu nhưng nếu bạn muốn xem chi tiết hơn thì hãy đăng ký gói VIP nhé.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTvXAmW-OPz78b7gYv0fe9q-mimarEh2PhdE9PKUysscibq2lB6SmgyG4yaIStCKWnfvs&usqp=CAU" alt="Problem 2">
+                            <p>Kết quả tra cứu thần số học của tôi được bảo mật như thế nào?</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Chúng tôi cam kết bảo mật thông tin cá nhân của bạn. Dữ liệu của bạn được mã hóa và chỉ sử dụng cho mục đích tra cứu thần số học. Chúng tôi không chia sẻ thông tin của bạn với bên thứ ba.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://tracuuthansohoc.com/wp-content/uploads/2023/05/icon-thien-yet.png" alt="Problem 3">
+                            <p>Tôi cần cung cấp những thông tin gì để tra cứu thần số học?</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Để tra cứu thần số học, bạn chỉ cần cung cấp tên đầy đủ và ngày tháng năm sinh của mình. Những thông tin này sẽ được sử dụng để tính toán và đưa ra kết quả.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREEKSOOXxAzIw-4_6Q5L2ugLHenPLKg9_n8EnAIXKGeOQwhE9aAUiiRUN2knY3Pj3QXUc&usqp=CAU" alt="Problem 4">
+                            <p>Tôi có thể tra cứu thần số học cho người khác không?</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Có, bạn có thể tra cứu thần số học cho người khác bằng cách nhập tên và ngày sinh của họ. Điều này thường được sử dụng để hiểu rõ hơn về người thân, bạn bè hoặc đối tác của bạn.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://tracuuthansohoc.com/wp-content/uploads/2023/05/icon-ma-ket.png" alt="Problem 5">
+                            <p>Kết quả tra cứu thần số học có chính xác và đáng tin cậy không?</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Thần số học dựa trên các phương pháp tính toán cổ xưa và có thể cung cấp những cái nhìn sâu sắc và hữu ích. Tuy nhiên, kết quả chỉ mang tính chất tham khảo và không phải là dự đoán chính xác tuyệt đối về tương lai.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://tracuuthansohoc.com/wp-content/uploads/2023/05/icon-kim-nguu.png" alt="Problem 6">
+                            <p>Tôi có thể nhận được báo cáo chi tiết hơn về thần số học của mình không?</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Có, chúng tôi cung cấp các báo cáo chi tiết hơn về thần số học với một khoản phí nhỏ. Bạn có thể nâng cấp để nhận được phân tích sâu hơn về tính cách, sự nghiệp và vận mệnh của mình.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://tracuuthansohoc.com/wp-content/uploads/2023/05/icon-song-ngu.png" alt="Problem 6">
+                            <p>Làm thế nào để sử dụng kết quả tra cứu thần số học trong cuộc sống hàng ngày?</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Bạn có thể sử dụng kết quả tra cứu để hiểu rõ hơn về bản thân, cải thiện các mối quan hệ và đưa ra các quyết định quan trọng trong cuộc sống. Thần số học có thể giúp bạn tận dụng các thế mạnh và khắc phục những điểm yếu của mình.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgx9LWaUXYIzrRZYzpzSGgnwCY8lN-mbQgqFP3hgy2RAKucqXBJf4IDURpgTRMD2zJR6c&usqp=CAU" alt="Problem 6">
+                            <p>Tôi gặp vấn đề khi tra cứu, tôi có thể liên hệ hỗ trợ ở đâu?</p>
+                        </div>
+                        <div class="card-back">
+                            <p>Nếu bạn gặp bất kỳ vấn đề nào khi tra cứu, vui lòng liên hệ với đội ngũ hỗ trợ của chúng tôi qua email hoặc số điện thoại được cung cấp trên trang liên hệ. Chúng tôi sẽ sẵn sàng hỗ trợ bạn.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section footer-logo">
+                <img src="images/logo.png" alt="Logo">
+                <p>Thần số học - Hành trình khám phá bản thân</p>
+                <p>Đăng ký nhận thông báo mới nhất</p>
+                <div class="newsletter">
+                    <input type="email" id="emailInput" placeholder="Email">
+                    <button class="modal-button" onclick="validateEmail()"><i class="fa fa-envelope"></i> Gửi</button>
+                    <!-- Modal -->
+                    <div id="myModal" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="hideModal()">&times;</span>
+                            <p id="modalMessage"></p>
+                            <button id="modalButton">OK</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61561530024229&locale=vi_VN"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/messages/t/320659477805095?locale=vi_VN"><i class="fab fa-facebook-messenger"></i></a>
+                    <a href="https://www.instagram.com/boivui.vn/?fbclid=IwZXh0bgNhZW0CMTAAAR3Q82XTgWbbgJcQUeZdJbtlbJxqt46589lXTmIh_vwVJzYZONDh1lWlOPU_aem_nGb6VsJXSJcMfhXODa9eiA"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-section footer-links">
+                <h3>Hỗ trợ khách hàng</h3>
+                <ul>
+                    <li><a href="../Gioi thiệu/gioithieu.html" title="Giới thiệu">Giới thiệu</a></li>
+                    <li><a href="../Liên hệ/index.html hệ/index.html" title="Liên hệ">Liên hệ</a></li>
+                    <li><a href="../Chính sách/giaidap.html" title="Giải đáp">Giải đáp </a></li>                      
+                </ul>
+            </div>
+            <div class="footer-section footer-links">
+                <h3>Chính sách</h3>
+                <ul>
+                    <li><a href="../Dịch vụ/thanh toán/thanhtoan.html" title="Thanh toán">Thanh toán</a></li>
+                    <li><a href="../Chính sách/chinhsachbaomat.html" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+                    <li><a href="../Chính sách/chinhsachcookie.html" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
+                    <li><a href="../Chính sách/Dieukhoansd.html" title="Chính sách sử dụng cookie">Chính sách sử dụng cookie</a></li>
+                </ul>
+            </div>
+            <div class="footer-section footer-contact">
+                <h3>Thông tin liên hệ</h3>
+                <p><img src="images/phone.png" alt="phone">0974 270 789</p>               
+                <p><img src="images/letter.png" alt="mail">thansohoc@gamil.com</p>
+                <p><img src="images/map.png" alt="địa chỉ">Đống Đa - Hà Nội</p>              
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Tra cứu thần số học</p>
+        </div>
+    </footer>
+    
+    <script src="giaidap.js"></script>
+</body>
+</html>

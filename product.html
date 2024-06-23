@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Đăng ký gói vip">
+    <title>Đăng kí vip</title>
+    <link rel="icon" href="https://kitpro.site/neowise/wp-content/uploads/sites/219/2024/02/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../trangchu/home.html" title="Trang chủ">Trang chủ</a></li>
+                    <li><a href="../../Gioi thiệu/gioithieu.html" title="Giới thiệu">Giới thiệu</a></li>
+                    <li>
+                        <a href="#" title="Tra cứu">Tra cứu</a>
+                        <ul class="dropdown">
+                            <li><a href="../../Tra cứu/Bói tình yêu/main.html">Bói tình yêu</a></li>
+                            <li><a href="../../Tra cứu/Bói cung hoàng đạo/Cunghoangdao.html">Bói theo cung hoàng đạo</a></li>
+                            <li><a href="../../Tra cứu/MBTI/index.html">Trắc nghiệm MBTI</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="Dịch vụ">Dịch vụ</a>
+                        <ul class="dropdown">
+                            <li><a href="../mua gói vip/product.html">Mua vip</a></li>
+                            <li><a href="../trò chuyển cùng chuyên gia/index.html">Trò chuyện cùng chuyên gia</a></li>
+                            <li><a href="../thanh toán/style.css">Thanh toán</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" title="Blog">Blog</a>
+                        <ul class="dropdown">
+                            <li><a href="../../Blog/blog bói tình yêu/index.html">Tình yêu</a></li>
+                            <li><a href="../../Blog/blog cung hoàng đạo/BlogCunghoangdao.html">Cung hoàng đạo</a></li>
+                            <li><a href="../../Blog/blog MBTI/blog.html">MBTI</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="icon-container">
+                <div class="search-container">
+                    <input type="text" class="search-box" placeholder="Tìm kiếm...">
+                    <button class="search-button" aria-label="Search"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="account">
+                    <button class="account-button" aria-label="Account"><i class="fas fa-user"></i></button>
+                    <ul class="dropdown">
+                        <li><a href="../../Tài khoản/Đăng nhập/index.html">Đăng nhập</a></li>
+                        <li><a href="#">Đăng ký</a></li>
+                    </ul>
+                </div>
+                
+                <button class="cart-button" aria-label="Cart" onclick="window.location.href='../mua gói vip/cart.html'">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                
+                
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+       
+    
+    
+    <section class="banner">
+        <div class="banner-content">
+            <h1>Đăng ký gói VIP</h1>
+            <p>Tra cứu thần số học - Khám phá những bí ẩn</p>
+            <button id="learn-more-button">Tìm hiểu thêm</button>
+        </div>
+    </section>
+    <main>
+        
+        <!-- Product Section -->
+        <section class="product">
+            <div class="container">
+                <div class="product-plan standard">
+                    <div class="plan-header">
+                        <h2>Gói cơ bản</h2>
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
+                    <ul class="plan-features">
+                        <li>Tra cứu thần số học 1 người</li>
+                        <li>Số lần tra cứu: 2 lần</li>
+                        <li>Báo cáo tổng quan</li>
+                        <li>Hỗ trợ qua email</li>
+                    </ul>
+                    <div class="plan-price">160.000 VND</div>
+                    <button class="plan-button" data-name="Gói cơ bản" data-price="160000" data-image="images/sp1.png">Đăng ký ngay</button>
+
+                </div>
+                <div class="product-plan advanced">
+                    <div class="plan-header">
+                        <h2>Gói nâng cao</h2>
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
+                    <ul class="plan-features">
+                        <li>Tra cứu thần số học 3 người</li>
+                        <li>Số lần tra cứu: 6 lần </li>
+                        <li>Báo cáo chuyên sâu</li>
+                        <li>Hỗ trợ qua email</li>
+                    </ul>
+                    <div class="plan-price">450.000 VND</div>
+                    <button class="plan-button" data-name="Gói nâng cao" data-price="450000" data-image="images/sp2.png">Đăng ký ngay</button>
+                </div>
+                <div class="product-plan premium">
+                    <div class="plan-header">
+                        <h2>Gói cao cấp</h2>
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
+                    <ul class="plan-features">
+                        <li>Tra cứu thần số học 5 người</li>
+                        <li>Số lần tra cứu: 10 lần</li>
+                        <li>Báo cáo chuyên sâu</li>
+                        <li>Hỗ trợ qua email</li>
+                        <li>Tham gia sự kiện độc quyền</li>
+                    </ul>
+                    <div class="plan-price">900.000 VND</div>
+                    <button class="plan-button" data-name="Gói cao cấp" data-price="900000" data-image="images/sp3.png">Đăng ký ngay</button>
+                </div>
+                <div class="product-plan vip">
+                    <div class="plan-header">
+                        <h2>Gói vip</h2>
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
+                    <ul class="plan-features">
+                        <li>Tra cứu thần số học cho 10 người</li>
+                        <li>Số lần tra cứu: 20 lần</li>
+                        <li>Báo cáo chi tiết và phân tích</li>
+                        <li>Hỗ trợ ưu tiên qua email và điện thoại</li>
+                        <li>Tham gia sự kiện độc quyền và chương trình đào tạo</li>
+                    </ul>
+                    <div class="plan-price">1.500.000 VND</div>
+                    <button class="plan-button" data-name="Gói VIP" data-price="1500000" data-image="images/sp4.png">Đăng ký ngay</button>
+                </div>
+                <div class="product-plan special">
+                    <div class="plan-header">
+                        <h2>Gói đặc biệt</h2>
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
+                    <ul class="plan-features">
+                        <li>Tra cứu thần số học cho 20 người</li>
+                        <li>Số lần tra cứu: Không giới hạn</li>
+                        <li>Báo cáo cá nhân hóa và dịch vụ tư vấn riêng</li>
+                        <li>Hỗ trợ ưu tiên 24/7 qua email, điện thoại và chat trực tuyến</li>
+                        <li>Tham gia sự kiện cao cấp và đặc biệt</li>
+                        <li>Dịch vụ khách hàng cá nhân hóa</li>
+                    </ul>
+                    <div class="plan-price">5.000.000 VND</div>
+                    <button class="plan-button" data-name="Gói Đặc biệt" data-price="5000000" data-image="images/sp5.png">Đăng ký ngay</button>
+                </div>
+                <div class="product-plan platinum">
+                    <div class="plan-header">
+                        <h2>Gói platinum</h2>
+                        <img src="images/logo.png" alt="Logo">
+                    </div>
+                    <ul class="plan-features">
+                        <li>Tra cứu thần số học cho 50 người</li>
+                        <li>Số lần tra cứu: Không giới hạn</li>
+                        <li>Báo cáo chi tiết, phân tích chiến lược và dự báo</li>
+                        <li>Hỗ trợ ưu tiên 24/7 qua email, điện thoại và chat trực tuyến</li>
+                        <li>Tham gia sự kiện VIP toàn cầu và dịch vụ VIP cá nhân hóa</li>
+                        <li>Quản lý dữ liệu và dịch vụ tư vấn doanh nghiệp</li>
+                    </ul>
+                    <div class="plan-price">10.000.000 VND</div>
+                    <button class="plan-button" data-name="Gói Platinum" data-price="10000000" data-image="images/sp6.png">Đăng ký ngay</button>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Instruction Section -->
+        <section class="huongdan">
+            <img src="images/hd.jpg" alt="Astronaut" class="huongdan-image" loading="lazy">
+            <div class="huongdan-text">
+                <h1>Hướng dẫn đăng ký gói VIP</h1>
+                <ul class="no-numbers">
+                    <li>Bước 1: Đăng ký tài khoản</li>
+                    <li>Bước 2: Chọn gói VIP phù hợp</li>
+                    <li>Bước 3: Thanh toán</li>
+                    <li>Bước 4: Truy cập lại trang web, đăng nhập và tiến hành tra cứu</li>
+                </ul>
+            </div>
+        </section>
+        <div class="results-section" id="vip-section">
+            <div class="container">
+                <h2><span class="highlight">Đăng ký gói VIP của bói vui có gì đặc biệt?</h2>
+                <p class="quote">"Sẽ thế nào nếu như bạn nhận biết và hiểu rõ những khó khăn hay rào cản mình đang gặp phải trong cuộc sống và giúp bạn nhanh chóng vượt qua nó một cách dễ dàng để có được cuộc sống hạnh phúc và thịnh vượng hơn"</p>
+                <div class="benefits">
+                    <div class="benefit">
+                        <p>Hỗ trợ và tư vấn cá nhân hóa: Các dịch vụ thần số học VIP thường cung cấp sự hỗ trợ và tư vấn cá nhân hóa, giúp bạn hiểu rõ hơn về số mệnh cá nhân và cách thúc đẩy sự nghiệp, tình cảm, sức khỏe, và các khía cạnh khác trong cuộc sống của bạn.</p>
+                    </div>
+                    <div class="benefit">
+                        <p>Truy cập vào nội dung chất lượng cao: Khóa VIP thường cung cấp truy cập vào các bài viết, thông tin chi tiết và phân tích sâu về thần số học mà không phải người dùng miễn phí nào cũng có được. Bạn có thể được tiếp cận với những kiến thức chuyên sâu hơn về số học và ứng dụng thực tế của nó trong cuộc sống.</p>
+                    </div>
+                    <div class="benefit">
+                        <p>Giúp bạn định hướng phát triển công việc, các mối quan hệ trong năm nay và các năm tiếp theo như thế nào, từ đó bạn có thể dễ dàng hơn trong việc lựa chọn hướng đi phù hợp và lên kế hoạch hoàn thành mục tiêu của mình</p>
+                    </div>
+                    <div class="benefit">
+                        <p>Cập nhật và bổ sung thường xuyên: Các nội dung và dịch vụ VIP thường được cập nhật thường xuyên hơn, đảm bảo bạn luôn có những thông tin mới nhất và chính xác nhất về số học.</p>
+                    </div>
+                    <div class="benefit">
+                        <p>Tiết kiệm thời gian và nỗ lực: Thay vì tự tìm hiểu và phân tích thông tin từ nhiều nguồn khác nhau, bạn có thể tiết kiệm thời gian và nỗ lực bằng cách có được truy cập nhanh chóng và dễ dàng vào những tài liệu chất lượng và các chuyên gia trong lĩnh vực số học.</p>
+                    </div>
+                    <div class="benefit">
+                        <p>Độc quyền và ưu đãi: Khóa VIP thường đi kèm với các ưu đãi và quyền lợi độc quyền mà người dùng thông thường không có được, chẳng hạn như các buổi hướng dẫn trực tuyến, phân tích chi tiết hoặc giảm giá cho các sản phẩm và dịch vụ khác liên quan đến thần số học.</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+        <div class="testimonial-container">
+            <h2>Khách hàng đã nói gì về dịch vụ tra cứu thần số học</h2>
+            <div class="testimonial">
+                <button class="arrow left-arrow" onclick="prevTestimonial()">◀</button>
+                <div class="testimonial-content">
+                    <img src="images/danhgia1.jpg" alt="" class="testimonial-image">
+                    <p class="testimonial-name">Chị Kiều Trang</p>
+                    <p class="testimonial-text">
+                        Dịch vụ tra cứu thần số học trực tuyến này không chỉ giúp tôi hiểu rõ hơn về bản thân mà còn cung cấp cho tôi những gợi ý hữu ích để cải thiện cuộc sống và sự nghiệp. Tôi sẽ tiếp tục sử dụng và khuyên bạn bè của mình nên thử trải nghiệm dịch vụ này.
+                    </p>
+                </div>
+                <button class="arrow right-arrow" onclick="nextTestimonial()">▶</button>
+            </div>
+            <div class="dots">
+                <span class="dot active" onclick="currentTestimonial(0)"></span>
+                <span class="dot" onclick="currentTestimonial(1)"></span>
+                <span class="dot" onclick="currentTestimonial(2)"></span>
+                <span class="dot" onclick="currentTestimonial(3)"></span>
+                <span class="dot" onclick="currentTestimonial(4)"></span>
+            </div>
+        </div>
+        <script src="product.js"></script>
+        <div class="flex-container">
+        <div class="faq-order-container">
+            <section class="question">
+                <h2>Những câu hỏi thường gặp</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">Câu hỏi 1: Gói VIP có những lợi ích gì so với gói cơ bản?</div>
+                        <div class="faq-answer">Gói VIP cung cấp quyền truy cập vào các dịch vụ và tính năng nâng cao, bao gồm phân tích chi tiết hơn về thần số học cá nhân, các bản dự đoán chi tiết và hỗ trợ tư vấn cá nhân hóa.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Câu hỏi 2: Tôi có thể hủy gói VIP khi nào và có phải trả phí hủy không?</div>
+                        <div class="faq-answer">Bạn có thể hủy bất kỳ lúc nào bằng cách liên hệ với chúng tôi qua email hoặc điện thoại. Không có phí hủy cho gói VIP của chúng tôi.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Câu hỏi 3: Thông tin cá nhân của tôi sẽ được bảo mật như thế nào?</div>
+                        <div class="faq-answer">Chúng tôi cam kết bảo vệ thông tin cá nhân của bạn. Thông tin của bạn sẽ được sử dụng chỉ để cung cấp dịch vụ và không bao giờ được tiết lộ cho bên thứ ba.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Câu hỏi 4: Tôi có thể sử dụng dịch vụ VIP trên nhiều thiết bị không?</div>
+                        <div class="faq-answer">Bạn có thể sử dụng gói VIP của chúng tôi trên mọi thiết bị kết nối internet mà bạn có, bao gồm cả máy tính, điện thoại di động và máy tính bảng.</div>
+                    </div>
+                </div>
+            </div>
+            <section>
+                <div class="order-form-container">
+                    <div class="order-form">
+                        <h2>ĐĂNG KÝ NHẬN TƯ VẤN</h2>
+                        <p>Thần số học - Hành trình khám phá bản thân</p>
+                        <form id="registerForm">
+                            <input type="text" id="name" placeholder="Vui lòng điền tên của bạn" required>
+                            <input type="email" id="email" placeholder="Email" required>
+                            <input type="tel" id="phone" placeholder="Số điện thoại" required>
+                            <input type="text" id="package" placeholder="Gói muốn mua" required>
+                            <input type="text" id="note" placeholder="Ghi chú" required>
+                            <button type="submit">Đăng ký</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        
+            
+            
+        </div>
+        
+    </main>
+    <!-- Footer -->
+    <footer>
+    <div class="footer-content">
+        <div class="footer-section footer-logo">
+            <img src="images/logo.png" alt="Logo">
+            <p>Thần số học - Hành trình khám phá bản thân</p>
+            <p>Đăng ký nhận thông báo mới nhất</p>
+            <div class="newsletter">
+                <input type="email" id="emailInput" placeholder="Email">
+                <button class="modal-button" onclick="validateEmail()"><i class="fa fa-envelope"></i> Gửi</button>
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="hideModal()">&times;</span>
+                        <p id="modalMessage"></p>
+                        <button id="modalButton">OK</button>
+                    </div>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61561530024229&locale=vi_VN"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.facebook.com/messages/t/320659477805095?locale=vi_VN"><i class="fab fa-facebook-messenger"></i></a>
+                <a href="https://www.instagram.com/boivui.vn/?fbclid=IwZXh0bgNhZW0CMTAAAR3Q82XTgWbbgJcQUeZdJbtlbJxqt46589lXTmIh_vwVJzYZONDh1lWlOPU_aem_nGb6VsJXSJcMfhXODa9eiA"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-section footer-links">
+            <h3>Hỗ trợ khách hàng</h3>
+            <ul>
+                <li><a href="../../Gioi thiệu/gioithieu.html" title="Giới thiệu">Giới thiệu</a></li>
+                <li><a href="../../Liên hệ/index.html" title="Liên hệ">Liên hệ</a></li>
+                <li><a href="../../Chính sách/giaidap.html" title="Giải đáp">Giải đáp </a></li>                      
+            </ul>
+        </div>
+        <div class="footer-section footer-links">
+            <h3>Chính sách</h3>
+            <ul>
+                <li><a href="../thanh toán/thanhtoan.html" title="Thanh toán">Thanh toán</a></li>
+                <li><a href="../../Chính sách/chinhsachbaomat.html" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+                <li><a href="../../Chính sách/chinhsachcookie.html" title="Điều khoản sử dụng">Điều khoản sử dụng</a></li>
+                <li><a href="../../Chính sách/Dieukhoansd.html" title="Chính sách sử dụng cookie">Chính sách sử dụng cookie</a></li>
+            </ul>
+        </div>
+        <div class="footer-section footer-contact">
+            <h3>Thông tin liên hệ</h3>
+            <p><img src="images/phone.png" alt="phone">0974 270 789</p>               
+            <p><img src="images/letter.png" alt="mail">thansohoc@gamil.com</p>
+            <p><img src="images/map.png" alt="địa chỉ">Đống Đa - Hà Nội</p>              
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Tra cứu thần số học</p>
+    </div>
+</footer>
+
+    
+
+</body>
+</html>
